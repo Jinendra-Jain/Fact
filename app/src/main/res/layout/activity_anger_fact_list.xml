@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayoutAngerFactListActivity">
+
+    <ImageView
+        android:id="@+id/previousMenuImageViewAngerFactListActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:layout_constraintBottom_toTopOf="@id/factNumberListViewAngerFactListActivity"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/ic_previous_menu"
+        android:contentDescription="Previous Menu" />
+
+    <ImageView
+        android:id="@+id/logoAngerFactListActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:layout_constraintBottom_toTopOf="@+id/factNumberListViewAngerFactListActivity"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/logo"
+        android:contentDescription="Logo" />
+
+    <ListView
+        android:id="@+id/factNumberListViewAngerFactListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        ads:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewAngerFactListActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdViewAngerFactListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@id/factNumberListViewAngerFactListActivity"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayoutAngerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewAngerActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/previousMenuImageViewAngerActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintHorizontal_bias="0.0"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:srcCompat="@drawable/ic_previous_menu" />
+
+        <ImageView
+            android:id="@+id/logoAngerActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginEnd="144dp"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toStartOf="@+id/infoImageViewAngerActivity"
+            ads:layout_constraintStart_toEndOf="@+id/previousMenuImageViewAngerActivity"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:layout_constraintVertical_bias="0.0"
+            ads:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/infoImageViewAngerActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintHorizontal_bias="1.0"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:srcCompat="@drawable/ic_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewAngerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewAngerActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/angerCartoonImageImageViewAngerActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:srcCompat="@drawable/anger"
+                app:layout_constraintBottom_toTopOf="@+id/angerFactListButtonAngerActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/angerFactListButtonAngerActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Read Facts"
+                android:textColor="#FF0000"
+                android:textSize="36sp"
+                ads:layout_constraintBottom_toTopOf="@+id/descriptionTextViewAngerActivity"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@+id/angerCartoonImageImageViewAngerActivity" />
+
+            <TextView
+                android:id="@+id/descriptionTextViewAngerActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Anger, also known as rage, is an intense emotional state involving a strong uncomfortable and hostile response to a perceived provocation, hurt or threat.  A person experiencing anger will often experience physical effects, such as increased heart rate, elevated blood pressure, and increased levels of adrenaline and noradrenaline. Some view anger as an emotion which triggers part of the fight or flight response. Anger becomes the predominant feeling behaviorally, cognitively, and physiologically when a person makes the conscious choice to take action to immediately stop the threatening behavior of another outside force. The English term originally comes from the term anger of Old Norse language"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                ads:layout_constraintTop_toBottomOf="@+id/angerFactListButtonAngerActivity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdViewAngerActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/scrollViewAngerActivity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

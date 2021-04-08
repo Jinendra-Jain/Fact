@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fact</string>
+    <string name="facts">Facts</string>
+    <string name="created_by_jinendra_jain">Created by Jinendra Jain</string>
+    <string name="Settings">Settings</string>
+    <string name="anger">Anger</string>
+    <string name="fact_number">#Fact Number</string>
+    <string name="animals">Animals</string>
+    <string name="search_title">Fact #Number</string>
+</resources>

@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayoutCategoryActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewCategoryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        ads:layout_constraintBottom_toTopOf="@id/bannerAdViewCategoryActivity"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2.5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logoCategoryActivity"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        ads:layout_constraintBottom_toBottomOf="parent"
+                        ads:layout_constraintEnd_toStartOf="@+id/appNameCategoryActivity"
+                        ads:layout_constraintStart_toStartOf="parent"
+                        ads:layout_constraintTop_toTopOf="parent"
+                        ads:srcCompat="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/appNameCategoryActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bangers"
+                        android:gravity="center"
+                        android:text="facts"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        ads:layout_constraintBottom_toBottomOf="parent"
+                        ads:layout_constraintEnd_toStartOf="@+id/settingsImageViewCategoryActivity"
+                        ads:layout_constraintStart_toEndOf="@+id/logoCategoryActivity"
+                        ads:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/settingsImageViewCategoryActivity"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        ads:layout_constraintBottom_toBottomOf="parent"
+                        ads:layout_constraintEnd_toEndOf="parent"
+                        ads:layout_constraintStart_toEndOf="@+id/appNameCategoryActivity"
+                        ads:layout_constraintTop_toTopOf="parent"
+                        ads:srcCompat="@drawable/ic_settings" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/generalCategoryCategoryActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bangers"
+                        android:gravity="left|center_vertical"
+                        android:text="General"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        ads:layout_constraintBottom_toBottomOf="parent"
+                        ads:layout_constraintEnd_toEndOf="parent"
+                        ads:layout_constraintStart_toStartOf="parent"
+                        ads:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/amusingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Amusing"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/appealingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Appealing"
+                android:textAllCaps="false"
+                android:textColor="#E7A24A"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/captivatingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Captivating"
+                android:textAllCaps="false"
+                android:textColor="#28D6C0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/compellingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Compelling"
+                android:textAllCaps="false"
+                android:textColor="#CFAFE2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/engagingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Engaging"
+                android:textAllCaps="false"
+                android:textColor="#FFA500"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/engrossingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Engrossing"
+                android:textAllCaps="false"
+                android:textColor="#EC678A"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/entertainingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Entertaining"
+                android:textAllCaps="false"
+                android:textColor="#D9DD99"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/enthrallingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Enthralling"
+                android:textAllCaps="false"
+                android:textColor="#FBA285"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/fascinatingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Fascinating"
+                android:textAllCaps="false"
+                android:textColor="#FDAD58"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/spellbindingFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="Spellbinding"
+                android:textAllCaps="false"
+                android:textColor="#E9CD6A"
+                android:textSize="24sp" />
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Unputdownable"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FCA9A8"-->
+<!--                android:textSize="24sp" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/psychologyCategoryCategoryActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bangers"
+                        android:gravity="left|center_vertical"
+                        android:text="Psychological"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        ads:layout_constraintBottom_toBottomOf="parent"
+                        ads:layout_constraintEnd_toEndOf="parent"
+                        ads:layout_constraintStart_toStartOf="parent"
+                        ads:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/angerButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/anger"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/animalsFactListButtonCategoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/animals"
+                android:textAllCaps="false"
+                android:textColor="#E7A24A"
+                android:textSize="24sp" />
+
+<!--            <Button-->
+<!--                android:id="@+id/artButtonCategoryActivity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Art"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#28D6C0"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Astronomy"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#CFAFE2"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Attraction"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFA500"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Biology"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#EC678A"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Body Language"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#D9DD99"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Brain"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FBA285"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Celebrities"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FDAD58"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Chemistry"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#E9CD6A"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Children"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FCA9A8"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Colours"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#9E3C7E"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Depression"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3566A2"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Economy"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#8DBDC4"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Emotions"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#F268B8"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Environment"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFB300"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Extroverts"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#BA68C8"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Friendship"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#304FFE"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Geography"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#76FF03"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Happiness"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#F50057"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Health"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#EEFF41"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="History"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#64B5F6"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Human Behaviour"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#8D6E63"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Human Body"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#90A4AE"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Hunger and Food"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#1DE9B6"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Interesting"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#ADFF2F"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Introverts"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#7B1FA2"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Jealousy"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#F44336"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Language"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFF9C4"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Laughter"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FBC02D"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Left Handed People"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFEB3B"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Love"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#D32F2F"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Maths"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#F5F5F5"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Media"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FF5252"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Men"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FF4081"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Mind"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#E91E63"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Music"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFA000"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Nature"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#CDDC39"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="OCD"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#009688"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="People"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFECB3"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Personality"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#00BCD4"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Phobia"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#ADFF2F"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Physics"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FF5722"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Plants"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#8BC34A"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Psychology"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#03A9F4"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Science"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Sleep"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#9E9E9E"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Social Media"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#536DFE"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Statistics"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#E040FB"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Strange Laws"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#009688"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Sixth Sense"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#CDDC39"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Teenagers"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#C2185B"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Women"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFCDD2"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="World Records"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FF9800"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1.5"-->
+<!--                android:background="@drawable/custom_button"-->
+<!--                android:fontFamily="@font/aclonica"-->
+<!--                android:text="Writing"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#E1BEE7"-->
+<!--                android:textSize="24sp" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdViewCategoryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@id/scrollViewCategoryActivity">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

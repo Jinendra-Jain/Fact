@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinendra.fact">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <queries>
+        <intent>
+            <action
+                android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Facts.General.Spellbinding.SpellbindingFactList"/>
+        <activity android:name=".Facts.General.Spellbinding.SpellbindingFact" />
+        <activity android:name=".Facts.General.Fascinating.FascinatingFactList" />
+        <activity android:name=".Facts.General.Fascinating.FascinatingFact" />
+        <activity android:name=".Facts.General.Enthralling.EnthrallingFactList" />
+        <activity android:name=".Facts.General.Enthralling.EnthrallingFact" />
+        <activity android:name=".Facts.General.Entertaining.EntertainingFactList" />
+        <activity android:name=".Facts.General.Entertaining.EntertainingFact" />
+        <activity android:name=".Facts.General.Engrossing.EngrossingFactList" />
+        <activity android:name=".Facts.General.Engrossing.EngrossingFact" />
+        <activity android:name=".Facts.General.Engaging.EngagingFactList" />
+        <activity android:name=".Facts.General.Engaging.EngagingFact" />
+        <activity android:name=".Facts.General.Compelling.CompellingFact" />
+        <activity android:name=".Facts.General.Compelling.CompellingFactList" />
+        <activity android:name=".Facts.General.Captivating.CaptivatingFact" />
+        <activity android:name=".Facts.General.Captivating.CaptivatingFactList" />
+        <activity android:name=".Facts.General.Appealing.AppealingFactList" />
+        <activity android:name=".Facts.General.Appealing.AppealingFact" />
+        <activity
+            android:name=".Facts.General.Amusing.AmusingFactList"
+            android:parentActivityName=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Facts.General.Amusing.AmusingFact"
+            android:parentActivityName=".Facts.General.Amusing.AmusingFactList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Facts.Psychological.Animals.AnimalsFact"
+            android:parentActivityName=".Facts.Psychological.Animals.AnimalsFactList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Facts.Psychological.Animals.AnimalsFactList"
+            android:parentActivityName=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SolidColors"
+            android:parentActivityName=".Wallpaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wallpaper"
+            android:parentActivityName=".Customize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Customize"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Facts.Psychological.Anger.AngerFactList"
+            android:parentActivityName=".Categories.Anger"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Facts.Psychological.Anger.AngerFact"
+            android:parentActivityName=".Facts.Psychological.Anger.AngerFactList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Categories.Anger"
+            android:parentActivityName=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

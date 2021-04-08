@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayoutFascinatingFactActivity">
+
+    <ImageView
+        android:id="@+id/previousMenuImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_previous_menu"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/shareImageViewFascinatingFactActivity"
+        app:layout_constraintStart_toEndOf="@id/previousMenuImageViewFascinatingFactActivity"/>
+
+    <ImageView
+        android:id="@+id/shareImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_share"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/factsTextViewFascinatingFactActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#000000"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FDAD58"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/previousImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_previous"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintEnd_toStartOf="@id/playImageViewFascinatingFactActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/factsTextViewFascinatingFactActivity" />
+
+    <ImageView
+        android:id="@+id/playImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_play"
+        app:layout_constraintBottom_toTopOf="@+id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintEnd_toStartOf="@id/nextImageViewFascinatingFactActivity"
+        app:layout_constraintStart_toEndOf="@id/previousImageViewFascinatingFactActivity"
+        app:layout_constraintTop_toBottomOf="@+id/factsTextViewFascinatingFactActivity" />
+
+    <ImageView
+        android:id="@+id/pauseImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_pause"
+        app:layout_constraintBottom_toTopOf="@+id/bannerAdViewFascinatingFactActivity"
+        app:layout_constraintEnd_toStartOf="@id/nextImageViewFascinatingFactActivity"
+        app:layout_constraintStart_toEndOf="@id/previousImageViewFascinatingFactActivity"
+        app:layout_constraintTop_toBottomOf="@+id/factsTextViewFascinatingFactActivity"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/nextImageViewFascinatingFactActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        ads:srcCompat="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playImageViewFascinatingFactActivity"
+        app:layout_constraintTop_toBottomOf="@id/factsTextViewFascinatingFactActivity"
+        app:layout_constraintBottom_toTopOf="@id/bannerAdViewFascinatingFactActivity" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdViewFascinatingFactActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
